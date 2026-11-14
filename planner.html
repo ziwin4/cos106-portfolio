@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio and academic planner of Chimfurumnanya Godwin Kelvin, Miva Open University.">
+  <title>Academic Planner | Chimfurumnanya Godwin Kelvin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Godwin Kelvin</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="siteNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" aria-current="page">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <h1>Academic planner</h1>
+        <p>Add your tasks, tick them off and delete the ones you no longer need. Your list is saved on this device.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-label="Task planner">
+      <div class="container">
+        <div class="planner-panel">
+          <form class="planner-form" id="taskForm" novalidate>
+            <div class="field">
+              <label for="taskInput">New task</label>
+              <input type="text" id="taskInput" placeholder="e.g. Finish COS 106 term project" maxlength="120" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="taskCourse">Course</label>
+              <select id="taskCourse">
+                <option value="General">General</option>
+                <option value="COS 106">COS 106</option>
+                <option value="Other course">Other course</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Add task</button>
+          </form>
+          <p class="error" id="taskError" role="alert"></p>
+
+          <div class="planner-bar">
+            <div class="filters" role="group" aria-label="Filter tasks">
+              <button class="btn small ghost" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="btn small ghost" type="button" data-filter="active" aria-pressed="false">To do</button>
+              <button class="btn small ghost" type="button" data-filter="done" aria-pressed="false">Done</button>
+            </div>
+            <p class="counter" id="taskCounter" aria-live="polite">0 tasks</p>
+          </div>
+
+          <ul class="task-list" id="taskList"></ul>
+          <button class="btn small ghost" type="button" id="clearDone">Clear completed</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Chimfurumnanya Godwin Kelvin. COS 106 term project, Miva Open University.</p>
+      <p><a href="mailto:ziwinfour@gmail.com">ziwinfour@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-label="Terminal showing a number guessing game">
+<rect width="640" height="800" fill="#0f1f38"/>
+<rect x="0" y="0" width="640" height="48" fill="#162a4a"/>
+<circle cx="28" cy="24" r="8" fill="#d1402b"/><circle cx="54" cy="24" r="8" fill="#b89c78"/><circle cx="80" cy="24" r="8" fill="#5b7aa8"/>
+<text x="320" y="30" fill="#c9d4e6" font-family="monospace" font-size="16" text-anchor="middle">guess.py</text>
+<g font-family="monospace" font-size="24" fill="#e8eef8">
+<text x="40" y="130" fill="#b89c78">$ python guess.py</text>
+<text x="40" y="200">I'm thinking of a number</text>
+<text x="40" y="236">between 1 and 100.</text>
+<text x="40" y="310">Your guess: 50</text>
+<text x="40" y="346" fill="#d1402b">Too low. Try again.</text>
+<text x="40" y="420">Your guess: 75</text>
+<text x="40" y="456" fill="#d1402b">Too high. Try again.</text>
+<text x="40" y="530">Your guess: 63</text>
+<text x="40" y="566" fill="#7fd1a0">Correct! You got it in 3 tries.</text>
+<text x="40" y="640">Play again? (y/n)</text>
+</g></svg>

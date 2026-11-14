@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio and academic planner of Chimfurumnanya Godwin Kelvin, Miva Open University.">
+  <title>Contact | Chimfurumnanya Godwin Kelvin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Godwin Kelvin</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="siteNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Send me a message, or reach me directly.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-label="Contact form">
+      <div class="container contact-grid">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="Digits only, e.g. 09012345678">
+            <span class="error" id="phoneError"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+          <div class="form-status" id="formStatus" role="status" hidden></div>
+        </form>
+
+        <aside class="contact-card" aria-labelledby="direct-title">
+          <h2 id="direct-title">Reach me directly</h2>
+          <ul>
+            <li>Email: <a href="mailto:ziwinfour@gmail.com">ziwinfour@gmail.com</a></li>
+            <li>Phone: <a href="tel:+2349017264179">09017264179</a></li>
+            <li>School: Miva Open University</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Chimfurumnanya Godwin Kelvin. COS 106 term project, Miva Open University.</p>
+      <p><a href="mailto:ziwinfour@gmail.com">ziwinfour@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

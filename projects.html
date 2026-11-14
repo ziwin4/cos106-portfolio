@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio and academic planner of Chimfurumnanya Godwin Kelvin, Miva Open University.">
+  <title>Projects | Chimfurumnanya Godwin Kelvin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Godwin Kelvin</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="siteNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>Three things I have built or practised on.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-label="Project list">
+      <div class="container">
+
+        <article class="project">
+          <figure>
+            <img src="images/ant-mosaic.jpg" alt="Ant Mosaic home screen with Level Up, Endless, Pop and Versus game modes" loading="lazy">
+            <figcaption>Ant Mosaic main menu</figcaption>
+          </figure>
+          <div>
+            <h2>Ant Mosaic</h2>
+            <p class="meta">Puzzle game for the browser</p>
+            <p>A puzzle game where ants pick up blocks of the same colour until none are left. It has four modes: Level Up, Endless, Pop (a 60-second race) and Versus, plus daily challenges, a shop and a leaderboard.</p>
+            <div class="link-row">
+              <a class="btn small" href="https://antgame-delta.vercel.app" target="_blank" rel="noopener">Play the game</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure>
+            <img src="images/alertify.jpg" alt="Alertify dashboard showing Redstone, Chainlink and Pyth feed counts" loading="lazy">
+            <figcaption>Alertify dashboard</figcaption>
+          </figure>
+          <div>
+            <h2>Alertify</h2>
+            <p class="meta">Crypto analytics web app</p>
+            <p>A tool that monitors crypto prices from different oracles (RedStone, Chainlink and Pyth) and lets you compare them side by side. The dashboard shows how many feeds each oracle provides and lists live prices.</p>
+            <div class="link-row">
+              <a class="btn small" href="https://alertify-one.vercel.app" target="_blank" rel="noopener">Open Alertify</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure>
+            <img src="images/guessing-game.svg" alt="Terminal window running a number guessing game in Python" loading="lazy">
+            <figcaption>Sample run (illustration)</figcaption>
+          </figure>
+          <div>
+            <h2>Number Guessing Game</h2>
+            <p class="meta">Python command-line program</p>
+            <p>A beginner Python program. The computer picks a number from 1 to 100 and says "too high" or "too low" after each guess until you get it right. It counts your tries and lets you play again.</p>
+            <div class="link-row">
+              <a class="btn small" href="#" onclick="location.reload(); return false;">View code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section tint" aria-labelledby="glance-title">
+      <div class="container">
+        <h2 id="glance-title">Projects at a glance</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Summary of my projects</caption>
+            <thead>
+              <tr><th scope="col">Project</th><th scope="col">Type</th><th scope="col">Link</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Ant Mosaic</td><td>Browser game</td><td><a href="https://antgame-delta.vercel.app" target="_blank" rel="noopener">antgame-delta.vercel.app</a></td></tr>
+              <tr><td>Alertify</td><td>Web app</td><td><a href="https://alertify-one.vercel.app" target="_blank" rel="noopener">alertify-one.vercel.app</a></td></tr>
+              <tr><td>Number Guessing Game</td><td>Python program</td><td>Not online</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Chimfurumnanya Godwin Kelvin. COS 106 term project, Miva Open University.</p>
+      <p><a href="mailto:ziwinfour@gmail.com">ziwinfour@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
